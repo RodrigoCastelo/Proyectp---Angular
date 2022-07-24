@@ -1,0 +1,8 @@
+.menunav{
+    background-color: blueviolet;
+    height: 262px;
+}
+.menunav ul li{
+    text-decoration: none;
+    list-style:none ;
+}
