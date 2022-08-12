@@ -9,3 +9,7 @@ form{
     flex-direction: column;
     align-items: center;
 }
+table{
+    background-color:coral;
+    width: 1000px;
+}

@@ -7,7 +7,7 @@
 .grid-header{
     grid-area: header;
 }
-.grid-menunav{
+.grid-menu{
     grid-area: menu;
 }
 .grid-cuerpo{

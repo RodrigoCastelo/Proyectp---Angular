@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>Editar Estudiante</h1>
+<div mat-dialog-content>
+    <form [formGroup]="edicion">
+        <mat-form-field appearance="fill">
+            <mat-label>Nombre</mat-label>
+            <input formControlName="nombre" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Comision</mat-label>
+            <input formControlName="comision" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Profesor</mat-label>
+            <input formControlName="profesor" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Estudiantes</mat-label>
+            <input formControlName="estudiantes" matInput>
+        </mat-form-field>
+        <mat-slide-toggle formControlName="regular">Regular</mat-slide-toggle>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="cerrar()">Cerrar</button>
+    <button mat-button (click)="actualizar()">Actualizar</button>
+</div>
