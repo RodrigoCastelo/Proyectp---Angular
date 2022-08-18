@@ -1,8 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, NgModule, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTable, MatTableDataSource } from '@angular/material/table';
-import { Subscriber } from 'rxjs';
 import { EditarEstudianteComponent } from '../editar-estudiante/editar-estudiante.component';
 
 
@@ -40,7 +39,7 @@ export class MainComponent implements OnInit {
   });
 
   constructor(
-    private dialog: MatDialog
+    private dialog: MatDialog,
   ) { }
 
   ngOnInit(): void {
