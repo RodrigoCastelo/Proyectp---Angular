@@ -1,5 +1,5 @@
 import { Component, NgModule, OnInit, ViewChild } from '@angular/core';
-import { FormControl, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
+
 import { MatDialog } from '@angular/material/dialog';
 import { MatTable, MatTableDataSource } from '@angular/material/table';
 import { EditarEstudianteComponent } from '../editar-estudiante/editar-estudiante.component';
@@ -33,10 +33,7 @@ export class MainComponent implements OnInit {
   dataSource: MatTableDataSource<Curso> = new MatTableDataSource(info);
   @ViewChild (MatTable) tabla!: MatTable <Curso>;
 
-  formularioUsuario: FormGroup = new FormGroup({
-    usuario: new FormControl('', [Validators.required]),
-    contraseña: new FormControl('', [Validators.required, Validators.minLength(6)]),
-  });
+  
 
   constructor(
     private dialog: MatDialog,
@@ -45,9 +42,7 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  enviarUsuario(){
-    console.log(this.formularioUsuario);
-  }
+  
 
   eliminar(elemento:Curso){
     this.dataSource.data = this.dataSource.data.filter((curso:Curso) => curso.comision != elemento.comision);

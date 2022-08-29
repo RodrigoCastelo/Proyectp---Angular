@@ -9,6 +9,7 @@ import { RxjsService, Alumno } from './services/rxjs.service';
 export class AppComponent implements OnInit, OnDestroy{
   title = 'Desafio1';
   alumnos: Alumno[]=[];
+  alumnos$;
   constructor(
     private rxjsService:RxjsService
   ){
@@ -18,6 +19,7 @@ export class AppComponent implements OnInit, OnDestroy{
       });
       console.log(alumnoss)
     });
+    this.alumnos$=this.rxjsService.observableAlumnos();
   }
   ngOnDestroy(): void {
     

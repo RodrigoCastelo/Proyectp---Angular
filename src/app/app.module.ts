@@ -9,6 +9,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { EditarEstudianteComponent } from './components/editar-estudiante/editar-estudiante.component';
 import { AppMaterialModule } from './app.material.module';
+import { FormularioComponent } from './components/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppMaterialModule } from './app.material.module';
     ToolbarComponent,
     MainComponent,
     SidenavComponent,
-    EditarEstudianteComponent
+    EditarEstudianteComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,

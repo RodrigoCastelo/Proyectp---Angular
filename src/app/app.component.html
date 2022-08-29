@@ -1,5 +1,11 @@
 <div class="grid-container">
   <app-toolbar class="grid-header"></app-toolbar>
   <app-sidenav class="grid-menu"></app-sidenav>
-  <app-main class="grid-cuerpo"></app-main>
+  <!-- <app-main class="grid-cuerpo"></app-main> -->
 </div>
+<!-- <app-formulario></app-formulario> -->
+<ng-container *ngIf="alumnos$ | async as alumnos">
+  <div *ngFor="let alumno of alumnos">
+    <pre>{{alumno | json}}</pre>
+  </div>
+</ng-container>

@@ -18,11 +18,11 @@
     margin-left: 8px;
   }
   
-  .example-sidenav-container {
-    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
-       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+ /*  .example-sidenav-container {
     flex: 1;
-  }
+  } */
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
   
   .example-is-mobile .example-sidenav-container {
     /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the

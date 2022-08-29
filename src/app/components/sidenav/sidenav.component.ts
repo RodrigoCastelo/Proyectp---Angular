@@ -10,9 +10,9 @@ export class SidenavComponent implements OnInit {
 
   mobileQuery: MediaQueryList;
 
-  fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
+  /* fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`); */
 
-  fillerContent = Array.from(
+  /* fillerContent = Array.from(
     {length: 50},
     () =>
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -21,7 +21,7 @@ export class SidenavComponent implements OnInit {
         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   );
-
+ */
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {

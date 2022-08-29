@@ -1,0 +1,10 @@
+<form [formGroup] = "formularioUsuario" (ngSubmit)="enviarUsuario()">
+    <h2>Formulario Reactivos</h2>
+    <label>Usuario:</label>
+    <input type="text" formControlName= "usuario">
+    <p *ngIf="formularioUsuario.get('usuario')?.errors?.['required']">Completar para registrarse</p>
+    <label>Contraseña:</label>
+    <input type="password" formControlName="contraseña">
+    <p *ngIf="formularioUsuario.get('contraseña')?.errors?.['required']">Completar para registrarse</p>
+    <button type="submit" [disabled]="!formularioUsuario.valid">Enviar</button>
+</form>
